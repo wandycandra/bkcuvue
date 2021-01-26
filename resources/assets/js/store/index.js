@@ -42,6 +42,7 @@ import { tempat } from './modules/tempat';
 import { notification } from './modules/notification';
 import { saran } from './modules/saran';
 import { errorLog } from './modules/errorLog';
+import { fileUpload } from './modules/fileUpload';
 
 Vue.use(Vuex);
 
@@ -87,6 +88,7 @@ export default new Vuex.Store({
 		 tempat,
 		 notification,
 		 saran,
-		 errorLog
+		 errorLog,
+		 fileUpload
 	 }
 });

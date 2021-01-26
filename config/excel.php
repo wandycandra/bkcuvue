@@ -60,6 +60,15 @@ return [
             */
             'formatter' => 'slug',
         ],
+
+        
+        'csv'         => [
+            'delimiter'              => '|',
+            'enclosure'              => '"',
+            'escape_character'       => '\\',
+            'contiguous'             => false,
+            'input_encoding'         => 'UTF-8',
+        ],
     ],
 
     /*

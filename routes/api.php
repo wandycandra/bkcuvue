@@ -21,6 +21,13 @@ Route::group(['middleware' => 'throttle:60,1'], function () {
         // system
         Route::get('/system/version', 'SystemController@version');
 
+        //file upload
+        Route::post('/fileUpload/store', 'FileUploadController@store');
+        Route::get('/fileUpload/index/{id_cu}/{id_user}', 'FileUploadController@index');
+        Route::delete('/fileUpload/destroy/{id}', 'FileUploadController@destroy');
+        Route::post('/fileUpload/draft/{id_cu}/{id_user}', 'FileUploadController@uploadDraft');
+
+
         // user
         Route::get('/user/indexActivity', 'UserController@indexActivity');
         Route::get('/user/getActivity/{id}', 'UserController@getActivity');

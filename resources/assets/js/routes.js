@@ -156,6 +156,7 @@ const assesmentAccess_form = () => import('./views/assesmentAccess/form.vue');
 const monitoring = () => import('./views/monitoring/index.vue');
 const monitoring_form = () => import('./views/monitoring/form.vue');
 const monitoring_detail = () => import('./views/monitoring/detail.vue');
+const dataAnggotaUpload = () => import('./views/sistem/dataAnggotaUpload.vue');
 
 const routes = [
 
@@ -778,6 +779,12 @@ const routes = [
 		name: 'coaEdit', 
 		components: { default: coa_form, 'header': header, 'footer': footer },
 		meta: { requiresAuth: true, mode:'edit' }},
+	
+	// file upload
+	{ path: '/dataAnggotaUpload',
+		name: 'dataAnggotaUpload', 
+		components: { default: dataAnggotaUpload, 'header': header, 'footer': footer },
+		meta: { requiresAuth: true}},
 ]
 
 export default routes
